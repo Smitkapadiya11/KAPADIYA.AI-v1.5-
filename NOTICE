@@ -1,0 +1,23 @@
+KAPADIYA.AI v1.5 TMKB
+Copyright 2026 Smit Kapadiya
+
+This product is a modified version of FASHN VTON v1.5
+(https://github.com/fashn-AI/fashn-vton-1.5), Copyright FASHN AI,
+licensed under the Apache License, Version 2.0.
+
+The try-on model weights are the original FASHN VTON v1.5 weights,
+downloaded at runtime from https://huggingface.co/fashn-ai/fashn-vton-1.5.
+They have not been retrained or fine-tuned.
+
+Modifications made in this distribution:
+- Renamed the package (fashn_vton -> kapadiya_ai) and project branding.
+- Streaming, meta-device checkpoint loading (low host RAM).
+- Automatic precision selection (bf16 / fp16 / fp32) and a low-VRAM mode.
+- Interval classifier-free guidance, speed presets, and a 576x384 preview resolution.
+- Cached RoPE tables and garment preprocessing.
+- Warm-start sampling, a live webcam app, a CLI, and a benchmark script.
+
+Third-party components:
+- FLUX.1 components by Black Forest Labs (Apache-2.0)
+- DWPose (Apache-2.0), YOLOX (Apache-2.0)
+- fashn-human-parser (see https://github.com/fashn-AI/fashn-human-parser#license)
